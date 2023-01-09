@@ -31,7 +31,6 @@ const Timeline = ({ setObserver, callback }) => {
 
   const someCallback3 = () => {
     setMessage3("Recarregar as energias");
-    fireConfetti();
   };
 
   const someCallback4 = () => {
@@ -43,7 +42,7 @@ const Timeline = ({ setObserver, callback }) => {
     setObserver(timeline1.current);
     setObserver(timeline2.current);
     setObserver(timeline3.current);
-    setObserver(timeline3.current);
+    setObserver(timeline4.current);
     setObserver(circle1.current, someCallback);
     setObserver(circle2.current, someCallback2);
     setObserver(circle3.current, someCallback3);
@@ -77,10 +76,10 @@ const Timeline = ({ setObserver, callback }) => {
         <div className="message">{message3}</div>
       </div>
 
-      <div id="timeline4" ref={timeline3} className="timeline" />
+      <div id="timeline4" ref={timeline4} className="timeline" />
       <div className="circleWrapper">
         <div id="circle4" ref={circle4} className="circle">
-          3
+          4
         </div>
         <div className="message">{message4}</div>
       </div>
